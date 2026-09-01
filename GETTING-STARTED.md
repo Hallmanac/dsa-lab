@@ -1,4 +1,12 @@
-# Getting Started
+# Getting Started, the manual way
+
+> **Most people should use [`START-HERE.md`](./START-HERE.md) instead.**
+> That page has Claude do this setup with you, starting from nothing, and
+> it's the easier route by a wide margin.
+>
+> This page is the manual version, with every command spelled out. Use it
+> if you'd rather drive yourself, or if the assisted setup got stuck and
+> you want to see exactly what it was trying to do.
 
 Four things to set up before your first lesson: Git, the GitHub CLI,
 Claude Code, and your own private copy of this repo. Do these in order.
@@ -110,12 +118,12 @@ asked).
 This is the last manual step, everything after this is handled for you.
 Open a terminal wherever you keep projects and run `claude`, then say:
 
-> Read GETTING-STARTED.md. Clone my mentor's repo at
-> `https://github.com/Hallmanac/dsa-lab.git`, rename its remote to
-> `hall`, create a new private GitHub repo for me called `dsa-lab` using
-> the GitHub CLI, push everything there as `origin`, and set up my git
-> identity if it isn't already configured (ask me for my name and the
-> email on my GitHub account).
+> Clone the repo at `https://github.com/Hallmanac/dsa-lab.git` into a
+> folder called `dsa-lab`, rename that clone's remote to `hall`, create a
+> new private GitHub repo for me called `dsa-lab` using the GitHub CLI,
+> push everything there as `origin`, and set up my git identity if it
+> isn't already configured (ask me for my name and the email on my
+> GitHub account).
 
 Claude Code will run something close to:
 

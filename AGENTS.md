@@ -142,8 +142,10 @@ more reps before moving on.
 
 - `README.md`: the student-facing overview of the lab, its
   commands, and how the three languages are meant to be used
-- `GETTING-STARTED.md`: first-time setup for git, the GitHub CLI,
-  Claude Code, and the student's own private copy
+- `START-HERE.md`: the assisted setup path for a student starting
+  from nothing, where Claude does the install and clone with them
+- `GETTING-STARTED.md`: the manual version of that same setup, with
+  every command spelled out, used as the fallback
 - `curriculum.md`: the full ordered topic list with slugs
 - `git-curriculum.md`: the separate git topic list for `/git-lesson`
 - `progress/PROGRESS.md`: running log of what's been covered, in which

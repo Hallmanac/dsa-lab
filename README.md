@@ -10,18 +10,54 @@ directly. You make your own private copy, do all your learning there, and
 this repo stays the place updates come from. Setting that copy up is the
 first step below.
 
-## First-time setup
+## Start here
 
-You'll need a paid Claude plan (Pro, Max, Team, or Enterprise) and a
-GitHub account. Git, the GitHub CLI, and Claude Code all get installed
-along the way, so you don't need them beforehand.
+You don't need Git, the GitHub CLI, or Claude Code installed, and you
+don't need to have used a terminal before. The only thing you need up
+front is a paid Claude plan (Pro, Max, Team, or Enterprise).
 
-New here? Follow [`GETTING-STARTED.md`](./GETTING-STARTED.md) first, it
-walks through installing Claude Code and setting up your own private
-copy of this repo. Come back here once that's done.
+1. Install the [Claude app](https://claude.ai/download) and sign in.
+2. Make an empty folder where you keep projects, for example
+   `Documents/Code`.
+3. In the app, start a new **Code** session and point it at that folder.
+4. Paste the prompt below in as your first message.
 
-Already set up? Open a terminal in your own copy, run `claude`, and type
-`/lesson`.
+```
+I'm brand new to this and I don't have any developer tools set up yet.
+Please get me set up, and explain what you're doing as you go, in plain
+language. Assume I know nothing about git.
+
+1. Check whether I have git and the GitHub CLI (gh) installed. If either
+   is missing, tell me how to install it for my operating system, then
+   wait for me to do it.
+2. Check whether gh is signed in, using `gh auth status`. If it isn't,
+   walk me through `gh auth login` and let me do the browser sign-in
+   myself. Do not try to enter my password or any codes for me.
+3. Ask me for my name and the email address on my GitHub account, and
+   set up my git identity if it isn't already configured.
+4. Clone https://github.com/Hallmanac/dsa-lab.git into a folder called
+   dsa-lab inside the folder we're in now.
+5. Rename that clone's remote from `origin` to `hall`.
+6. Create a new PRIVATE GitHub repo for me called dsa-lab using the
+   GitHub CLI, set it as `origin`, and push everything to it.
+7. When that's all done, tell me how to open a new Code session inside
+   the dsa-lab folder, since that's where my lessons will happen.
+
+Stop and ask me whenever you're unsure about something.
+```
+
+Claude takes it from there. It checks what you're missing, walks you
+through installing it, makes your own private copy of this repo, and
+tells you what to do next. Expect it to pause and ask you to do a few
+things yourself, like signing in to GitHub in your browser.
+
+[`START-HERE.md`](./START-HERE.md) is the same walkthrough with more
+detail, including what to expect while it runs and what to do if
+something errors. If you'd rather type the setup commands by hand,
+[`GETTING-STARTED.md`](./GETTING-STARTED.md) has the manual version.
+
+**Already set up?** Open a Code session pointed at your own `dsa-lab`
+folder and type `/lesson`.
 
 ## Staying in sync
 
