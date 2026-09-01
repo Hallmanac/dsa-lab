@@ -41,13 +41,13 @@ The full version with more detail lives in `curriculum.md`.
 
 ## Commands
 
-- `/lesson` — start a new lesson, or point at one:
+- `/lesson`: start a new lesson, or point at one like
   `/lesson hash maps python`
-- `/review` — get a solution checked without starting a new lesson
-- `/progress` — see a summary of what you've covered, in which languages,
+- `/review`: get a solution checked without starting a new lesson
+- `/progress`: see a summary of what you've covered, in which languages,
   and what's next
-- `/sync` — pull in anything your mentor added since last time
-- `/git-lesson` — learn git itself, hands-on (see below)
+- `/sync`: pull in anything your mentor added since last time
+- `/git-lesson`: learn git itself, hands-on (see below)
 
 ## Learning git itself
 

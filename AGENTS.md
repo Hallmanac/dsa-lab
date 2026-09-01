@@ -44,13 +44,13 @@ without exception:
 Each curriculum topic gets its own directory at `lessons/<slug>/`, using the
 slug from `curriculum.md`. Inside it:
 
-- `README.md` — the concept explainer and analogy for this topic, written
+- `README.md`: the concept explainer and analogy for this topic, written
   once on the first pass through it. Language-agnostic content (the
   concept itself) belongs here.
-- `problems.md` — the 2-3 practice problem statements for this topic.
+- `problems.md`: the 2-3 practice problem statements for this topic.
   Written once, reused across every language the student attempts this
   topic in, so the problems stay comparable across languages.
-- `python/`, `java/`, `csharp/` — one subdirectory per language actually
+- `python/`, `java/`, `csharp/`: one subdirectory per language actually
   attempted, holding that language's solution files. Only create a
   language subdirectory when the student is about to work in it.
 
@@ -140,29 +140,29 @@ more reps before moving on.
 
 ## Files in this directory
 
-- `README.md` — the student-facing overview of the lab, its
+- `README.md`: the student-facing overview of the lab, its
   commands, and how the three languages are meant to be used
-- `GETTING-STARTED.md` — first-time setup: git, the GitHub CLI,
-  Claude Code, and creating the student's own private copy
-- `curriculum.md` — the full ordered topic list with slugs
-- `git-curriculum.md` — the separate git topic list for `/git-lesson`
-- `progress/PROGRESS.md` — running log of what's been covered, in which
+- `GETTING-STARTED.md`: first-time setup for git, the GitHub CLI,
+  Claude Code, and the student's own private copy
+- `curriculum.md`: the full ordered topic list with slugs
+- `git-curriculum.md`: the separate git topic list for `/git-lesson`
+- `progress/PROGRESS.md`: running log of what's been covered, in which
   language, and how confident the student felt; read this at the start of
   every session
-- `progress/GIT-PROGRESS.md` — same idea, for `/git-lesson` topics
-- `lessons/<slug>/` — one directory per algorithms topic, holding that
+- `progress/GIT-PROGRESS.md`: same idea, for `/git-lesson` topics
+- `lessons/<slug>/`: one directory per algorithms topic, holding that
   topic's concept notes, problem statements, and per-language solution
   attempts
-- `git-lessons/<slug>/` — one directory per git topic, holding that
+- `git-lessons/<slug>/`: one directory per git topic, holding that
   topic's concept notes and diagrams, written by `/git-lesson`
-- `scratch/` — for anything ad hoc that isn't tied to a curriculum topic
+- `scratch/`: for anything ad hoc that isn't tied to a curriculum topic
   (a problem from a problem set, a random question); treat as disposable
-- `.claude/commands/lesson.md` — the `/lesson` command
-- `.claude/commands/review.md` — the `/review` command, for checking a
+- `.claude/commands/lesson.md`: the `/lesson` command
+- `.claude/commands/review.md`: the `/review` command, for checking a
   solution without starting a new lesson
-- `.claude/commands/progress.md` — the `/progress` command, summarizes
+- `.claude/commands/progress.md`: the `/progress` command, summarizes
   where the student stands and suggests what's next
-- `.claude/commands/sync.md` — the `/sync` command, pulls in the mentor's
+- `.claude/commands/sync.md`: the `/sync` command, pulls in the mentor's
   updates from `hall` via rebase and pushes to `origin`
-- `.claude/commands/git-lesson.md` — the `/git-lesson` command, hands-on
+- `.claude/commands/git-lesson.md`: the `/git-lesson` command, hands-on
   git practice where the student types every command themselves

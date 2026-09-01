@@ -24,7 +24,7 @@ Language is chosen fresh every time this command runs. Never assume or
 carry a default over from a previous lesson or session.
 
 - If $ARGUMENTS didn't include a language, ask directly: "Which language
-  for this lesson — Python, Java, or C#?" Wait for their answer before
+  for this lesson (Python, Java, or C#)?" Wait for their answer before
   doing anything else.
 - If $ARGUMENTS did include one, don't skip the step silently: confirm it
   back in one short line ("This one's in Java.") so the choice is still

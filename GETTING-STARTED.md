@@ -135,10 +135,10 @@ distinction for you from now on.
 
 Once you're set up, `cd` into the `dsa-lab` folder, run `claude`, and use:
 
-- `/lesson` — start or continue a lesson
-- `/review` — get a solution checked
-- `/progress` — see where you stand
-- `/sync` — pull in anything your mentor added since last time
+- `/lesson`: start or continue a lesson
+- `/review`: get a solution checked
+- `/progress`: see where you stand
+- `/sync`: pull in anything your mentor added since last time
 
 You don't need to run git commands yourself. Claude Code commits and
 pushes your work to your own private repo automatically as you go, and

@@ -1,5 +1,5 @@
 ---
-description: A hands-on git lesson — the student types every command themselves
+description: A hands-on git lesson: the student types every command themselves
 argument-hint: [topic name, optional]
 model: sonnet
 ---
