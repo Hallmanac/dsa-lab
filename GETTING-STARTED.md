@@ -14,32 +14,68 @@ The free Claude.ai plan doesn't include it. If you're not sure which plan
 you're on, check with your mentor before spending time on the rest of
 this.
 
-## 2. Install Git for Windows
+## 2. Install Git
 
-Download and install from [git-scm.com/downloads/win](https://git-scm.com/downloads/win).
-Default options are fine, just click through the installer.
+Steps 2 through 4 differ by operating system, so pick the lines that
+match yours and ignore the rest.
+
+**Windows:** download and install from
+[git-scm.com/downloads/win](https://git-scm.com/downloads/win). The
+default options are fine, just click through the installer.
+
+**macOS:** you may already have it. Open Terminal and run
+`git --version`. If macOS offers to install the developer tools, accept,
+that's all you need. Otherwise install it with [Homebrew](https://brew.sh):
+
+```
+brew install git
+```
+
+**Linux:** use your distribution's package manager, for example
+`sudo apt install git` on Debian or Ubuntu, or `sudo dnf install git` on
+Fedora.
 
 ## 3. Install the GitHub CLI
 
-Download and install from [cli.github.com](https://cli.github.com/), or
-from PowerShell:
+**Windows**, from PowerShell:
 
-```powershell
+```
 winget install --id GitHub.cli
 ```
 
+**macOS**, with Homebrew:
+
+```
+brew install gh
+```
+
+**Linux:** follow the short per-distribution instructions in
+[the gh install guide](https://github.com/cli/cli/blob/trunk/docs/install_linux.md).
+
+On any platform you can instead download an installer directly from
+[cli.github.com](https://cli.github.com/).
+
 ## 4. Install Claude Code
 
-Close and reopen your terminal after the installs above, then open
-PowerShell and run:
+Close and reopen your terminal first, so it picks up the commands you
+just installed. Then:
 
-```powershell
+**Windows**, from PowerShell:
+
+```
 irm https://claude.ai/install.ps1 | iex
 ```
 
-Close and reopen your terminal again, then verify it worked:
+**macOS or Linux**, from Terminal:
 
-```powershell
+```
+curl -fsSL https://claude.ai/install.sh | bash
+```
+
+Close and reopen your terminal again, then verify it worked. This one is
+the same everywhere:
+
+```
 claude --version
 ```
 
@@ -48,9 +84,9 @@ You should see a version number. If something looks wrong, run
 
 ## 5. Log in to Claude
 
-Run:
+From here on, every command is identical on all three platforms. Run:
 
-```powershell
+```
 claude
 ```
 
@@ -62,7 +98,7 @@ then type `exit` or press Ctrl+C to leave the session for now.
 Go to [github.com](https://github.com) and sign up if you don't already
 have an account. Free is all you need here. Then authenticate the CLI:
 
-```powershell
+```
 gh auth login
 ```
 
@@ -83,7 +119,7 @@ Open a terminal wherever you keep projects and run `claude`, then say:
 
 Claude Code will run something close to:
 
-```powershell
+```
 git clone https://github.com/Hallmanac/dsa-lab.git dsa-lab
 cd dsa-lab
 git remote rename origin hall
