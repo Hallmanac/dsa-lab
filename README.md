@@ -17,10 +17,14 @@ don't need to have used a terminal before. The only thing you need up
 front is a paid Claude plan (Pro, Max, Team, or Enterprise).
 
 1. Install the [Claude app](https://claude.ai/download) and sign in.
-2. Make an empty folder where you keep projects, for example
-   `Documents/Code`.
+2. Make an empty folder where you keep projects, for example a folder
+   called `Code` inside your `Documents`.
 3. In the app, start a new **Code** session and point it at that folder.
 4. Paste the prompt below in as your first message.
+
+The Claude desktop app runs on Windows and Mac. On Linux, use
+[`GETTING-STARTED.md`](./GETTING-STARTED.md) instead, which does the same
+setup from the terminal.
 
 ```
 I'm brand new to this and I don't have any developer tools set up yet.

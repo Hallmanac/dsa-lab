@@ -23,10 +23,22 @@ website.
 
 You do not need to install Claude Code separately. It comes with the app.
 
+The desktop app runs on Windows and Mac. If you're on Linux, this
+assisted path isn't available to you, so use
+[`GETTING-STARTED.md`](./GETTING-STARTED.md) instead. It sets the same
+thing up from the terminal and works fine on Linux.
+
 ## 2. Make an empty folder for your projects
 
-Somewhere you'll remember. `Documents/Code` is a fine choice. It can be
-completely empty, that's expected.
+Somewhere you'll remember. It can be completely empty, that's expected.
+
+**On Windows:** open File Explorer, go to your `Documents` folder, and
+make a new folder called `Code`. Its full path will look something like
+`C:\Users\yourname\Documents\Code`.
+
+**On a Mac:** open Finder, go to your `Documents` folder, and make a new
+folder called `Code`. Its full path will look something like
+`/Users/yourname/Documents/Code`.
 
 Make the folder now, before the next step. You just need it to exist.
 
@@ -76,10 +88,13 @@ None of the following means something went wrong:
 
 - **Claude will ask your permission to run commands.** That's normal and
   it's how it's supposed to work. Read what it's asking, then approve.
-- **It will stop and ask you to do things.** Installing Git may need your
-  computer password, and signing in to GitHub happens in your browser,
-  under your control. Claude shouldn't do those parts for you, and it
-  will wait while you do them.
+- **It will stop and ask you to do things.** Installing Git sets off a
+  security prompt from your operating system. On Windows that's a User
+  Account Control box asking whether to allow the install. On a Mac it's
+  a dialog asking for your login password. Either way it's expected.
+  Signing in to GitHub happens in your browser, under your control.
+  Claude shouldn't do those parts for you, and it will wait while you do
+  them.
 - **You'll be asked to create a GitHub account** if you don't have one.
   A free account is all you need.
 - **It may take a few rounds of back and forth.** That's the normal shape
