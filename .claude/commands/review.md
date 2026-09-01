@@ -18,4 +18,9 @@ Do not rewrite the solution. Instead:
   they're stuck on a fix, one tier at a time
 
 If the file lives under `lessons/<slug>/`, log the outcome as a row in
-`progress/PROGRESS.md` (topic, language, etc.) the same way `/lesson` does.
+`progress/PROGRESS.md` (topic, language, etc.) the same way `/lesson`
+does. Ask the student to self-rate their confidence 1-5 first, and use
+the number they give you. Never assign one yourself, and never write a
+row with the confidence column guessed or left blank. If the session
+ends without a rating, tell them the row is waiting on their number
+instead of logging it anyway.
