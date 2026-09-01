@@ -96,7 +96,10 @@ None of the following means something went wrong:
   Claude shouldn't do those parts for you, and it will wait while you do
   them.
 - **You'll be asked to create a GitHub account** if you don't have one.
-  A free account is all you need.
+  A free account is all you need. This part is yours to do. Claude will
+  point you at the sign-up page but won't create the account or type a
+  password for you. That's deliberate, not a limitation, and the same
+  goes for signing in to GitHub later.
 - **It may take a few rounds of back and forth.** That's the normal shape
   of this, not a sign it's failing.
 
