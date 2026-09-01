@@ -22,9 +22,16 @@ with a raw error, and never invent or guess a URL for it.
    of whatever the mentor added.
 4. If a conflict comes up, do not silently pick a side. Explain in plain
    language what the mentor changed versus what the student changed in
-   that spot, and ask which to keep (or whether to keep both). Use
-   `git rebase --continue` once it's resolved, `git rebase --abort` if the
-   student wants to back out entirely.
+   that spot, and ask which to keep (or whether to keep both). Get the
+   two sides the right way round before explaining them: during a rebase
+   the `HEAD` side of the conflict markers is the mentor's work being
+   replayed onto, and the incoming side, labeled with the commit being
+   applied, is the student's. That is the reverse of what the labels
+   suggest to anyone used to merges. Check with
+   `git show hall/main:<file>` if you are unsure, because telling a
+   beginner that their own edit is their mentor's is worse than not
+   explaining at all. Use `git rebase --continue` once it's resolved,
+   `git rebase --abort` if the student wants to back out entirely.
 5. Once the rebase finishes cleanly, run
    `git push --force-with-lease origin main`. This is safe here because
    it's the student's own solo private repo; nobody else could be relying
