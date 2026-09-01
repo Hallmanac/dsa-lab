@@ -109,7 +109,10 @@ hand yet, that's a lesson for later. Handle it for them:
   session, `git add` the relevant lesson folder and
   `progress/PROGRESS.md`, commit with a short descriptive message, and
   push to `origin`. No need to ask permission each time, it's the
-  student's own solo private repo.
+  student's own solo private repo. That last part is the reason it's
+  fine without asking, so if `origin` turns out to be a public or
+  shared repo rather than the student's private one, pushing to it is
+  publishing: ask first in that case.
 - **Sync via rebase, not merge.** Pulling in the mentor's updates happens
   through `/sync`, which rebases onto `hall/main` rather than merging, to
   keep history linear. Don't run a plain `git merge hall/main` unless the
@@ -137,6 +140,10 @@ more reps before moving on.
 
 ## Files in this directory
 
+- `README.md` — the student-facing overview of the lab, its
+  commands, and how the three languages are meant to be used
+- `GETTING-STARTED.md` — first-time setup: git, the GitHub CLI,
+  Claude Code, and creating the student's own private copy
 - `curriculum.md` — the full ordered topic list with slugs
 - `git-curriculum.md` — the separate git topic list for `/git-lesson`
 - `progress/PROGRESS.md` — running log of what's been covered, in which

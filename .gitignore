@@ -1,3 +1,7 @@
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Claude Code's local permission grants. Machine-specific, and if it gets
+# committed it conflicts on every /sync rebase.
+.claude/settings.local.json

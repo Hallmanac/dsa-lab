@@ -75,16 +75,16 @@ This is the last manual step, everything after this is handled for you.
 Open a terminal wherever you keep projects and run `claude`, then say:
 
 > Read GETTING-STARTED.md. Clone my mentor's repo at
-> `<your-mentor's-repo-url>`, rename its remote to `hall`, create a new
-> private GitHub repo for me called `dsa-lab` using the GitHub CLI, push
-> everything there as `origin`, and set up my git identity if it isn't
-> already configured (ask me for my name and the email on my GitHub
-> account).
+> `https://github.com/Hallmanac/dsa-lab.git`, rename its remote to
+> `hall`, create a new private GitHub repo for me called `dsa-lab` using
+> the GitHub CLI, push everything there as `origin`, and set up my git
+> identity if it isn't already configured (ask me for my name and the
+> email on my GitHub account).
 
 Claude Code will run something close to:
 
 ```powershell
-git clone <your-mentor's-repo-url> dsa-lab
+git clone https://github.com/Hallmanac/dsa-lab.git dsa-lab
 cd dsa-lab
 git remote rename origin hall
 gh repo create dsa-lab --private --source=. --remote=origin --push
