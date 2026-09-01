@@ -15,6 +15,25 @@ mentor before spending time here.
 The whole idea: instead of you following a long list of install steps,
 you point Claude at this repo and it does the setup with you.
 
+## Two words you'll see a lot
+
+**Git** is a tool that saves snapshots of your work as you go. Think of
+the version history in Google Docs, where you can look back at what a
+document looked like last Tuesday, except it works for folders of code
+and you decide when each snapshot gets taken. It runs on your own
+computer.
+
+**GitHub** is a website that stores copies of those snapshots online, so
+your work is backed up and your mentor can share updates with you. Git is
+the tool, GitHub is the place. They're easy to mix up because of the
+names.
+
+You'll need Git installed eventually, but not before you start. Claude
+checks whether you have it and walks you through installing it if you
+don't. You will never have to memorize Git commands to use this lab.
+Claude runs them for you, and if you ever get curious about what it's
+doing, `/git-lesson` teaches Git properly, one command at a time.
+
 ## 1. Install the Claude app
 
 Download it from [claude.ai/download](https://claude.ai/download) and
