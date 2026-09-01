@@ -3,13 +3,24 @@
 A self-paced way to learn algorithms and data structures using Claude Code
 as your tutor, across three languages: Python, Java, and C#.
 
+## What this repo is
+
+This is the shared baseline your mentor maintains. You don't work in it
+directly. You make your own private copy, do all your learning there, and
+this repo stays the place updates come from. Setting that copy up is the
+first step below.
+
 ## First-time setup
+
+You'll need a paid Claude plan (Pro, Max, Team, or Enterprise) and a
+GitHub account. Git, the GitHub CLI, and Claude Code all get installed
+along the way, so you don't need them beforehand.
 
 New here? Follow [`GETTING-STARTED.md`](./GETTING-STARTED.md) first, it
 walks through installing Claude Code and setting up your own private
 copy of this repo. Come back here once that's done.
 
-Already set up? Open a terminal in this folder, run `claude`, and type
+Already set up? Open a terminal in your own copy, run `claude`, and type
 `/lesson`.
 
 ## Staying in sync
@@ -58,13 +69,26 @@ for you even if you ask. That's the whole point, it's how the muscle
 memory actually forms. It's a separate track from the algorithms
 curriculum, see `git-curriculum.md` for the topic list.
 
+## What's in here
+
+```
+lessons/<slug>/          one folder per topic, e.g. lessons/03-two-pointers/
+  README.md              the concept notes for that topic
+  problems.md            the practice problems
+  python/ java/ csharp/  your solutions, one folder per language you try
+git-lessons/<slug>/      concept notes and diagrams from /git-lesson
+progress/                your running logs, algorithms and git kept separate
+scratch/                 anything ad hoc, treat it as disposable
+curriculum.md            the full topic list with slugs
+git-curriculum.md        the separate git topic list
+AGENTS.md                the rules Claude follows as your tutor
+```
+
+Folders under `lessons/` and `git-lessons/` appear as you go. An empty
+repo is expected on day one.
+
 ## How it works
 
-- Each topic gets its own folder under `lessons/`, e.g.
-  `lessons/03-two-pointers/`. That folder holds the concept notes
-  (`README.md`), the practice problems (`problems.md`), and a
-  subfolder per language you've tried it in (`python/`, `java/`,
-  `csharp/`).
 - `progress/PROGRESS.md` keeps a running log of what you've covered, in
   which language, and how confident you felt about it. It updates
   automatically as you go, so you can close the terminal and pick back up
@@ -89,3 +113,8 @@ the same problems in the new syntax.
 
 Say so. Ask Claude to slow down, re-explain, or give you an easier problem
 on the same topic. This is meant to build understanding, not to be a test.
+
+## License
+
+MIT, see [`LICENSE`](./LICENSE). Use, copy, and adapt this however you
+like.
